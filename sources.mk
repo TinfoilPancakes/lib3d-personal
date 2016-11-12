@@ -33,3 +33,12 @@ C_FILES += vec4f.c
 C_FILES += vec4f_init.c
 C_FILES += vec4f_from_euler.c
 C_FILES += vec4f_rot_vec3f.c
+
+# Color Union (int v, byte a, byte r, byte g, byte b)
+C_FILES += color.c
+C_FILES += color_init.c
+
+# Pixel (2d Integer Vector w/ Color)
+C_FILES += pixel.c
+C_FILES += pixel_init.c
+C_FILES += pixel_line_draw.c

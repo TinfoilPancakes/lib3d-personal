@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lib3d.h                                            :+:      :+:    :+:   */
+/*   color.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppatil <ppatil@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/11 08:06:10 by ppatil            #+#    #+#             */
-/*   Updated: 2016/11/11 08:06:10 by ppatil           ###   ########.fr       */
+/*   Created: 2016/11/12 09:43:54 by ppatil            #+#    #+#             */
+/*   Updated: 2016/11/12 09:43:54 by ppatil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIB3D_H
-# define LIB3D_H
+#ifndef COLOR_H
+# define COLOR_H
 
-# include "color.h"
-# include "vec2f.h"
-# include "vec3f.h"
-# include "vec4f.h"
-# include "mat4f.h"
-# include "pixel.h"
+union	u_color
+{
+	int				val;
+	unsigned char	a;
+	unsigned char	r;
+	unsigned char	g;
+	unsigned char	b;
+};
+
+typedef	union u_color	t_color;
+
+t_color	color(void);
+
+t_color	color_init(unsigned char r, unsigned char g, unsigned char b);
 
 #endif

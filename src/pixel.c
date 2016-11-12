@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lib3d.h                                            :+:      :+:    :+:   */
+/*   pixel.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppatil <ppatil@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/11 08:06:10 by ppatil            #+#    #+#             */
-/*   Updated: 2016/11/11 08:06:10 by ppatil           ###   ########.fr       */
+/*   Created: 2016/11/12 11:27:43 by ppatil            #+#    #+#             */
+/*   Updated: 2016/11/12 11:27:43 by ppatil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIB3D_H
-# define LIB3D_H
+#include "pixel.h"
 
-# include "color.h"
-# include "vec2f.h"
-# include "vec3f.h"
-# include "vec4f.h"
-# include "mat4f.h"
-# include "pixel.h"
+t_pixel	pixel(void)
+{
+	t_pixel	p;
 
-#endif
+	p.c.val = 0;
+	p.x = 0;
+	p.y = 0;
+	return (p);
+}

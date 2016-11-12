@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lib3d.h                                            :+:      :+:    :+:   */
+/*   color_init.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppatil <ppatil@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/11 08:06:10 by ppatil            #+#    #+#             */
-/*   Updated: 2016/11/11 08:06:10 by ppatil           ###   ########.fr       */
+/*   Created: 2016/11/12 10:04:02 by ppatil            #+#    #+#             */
+/*   Updated: 2016/11/12 10:04:02 by ppatil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIB3D_H
-# define LIB3D_H
+#include "color.h"
 
-# include "color.h"
-# include "vec2f.h"
-# include "vec3f.h"
-# include "vec4f.h"
-# include "mat4f.h"
-# include "pixel.h"
+t_color	color_init(unsigned char r, unsigned char g, unsigned char b)
+{
+	t_color c;
 
-#endif
+	c.a = 0;
+	c.r = r;
+	c.g = g;
+	c.b = b;
+	return (c);
+}
