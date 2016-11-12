@@ -15,6 +15,7 @@ C_FILES += mat4f.c
 C_FILES += mat4f_mult.c
 C_FILES += mat4f_transpose.c
 C_FILES += mat4f_vec_mult.c
+C_FILES += mat4f_rotation_euler.c
 
 # 2d Floating Point Vector
 C_FILES += vec2f.c

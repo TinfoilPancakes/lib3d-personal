@@ -25,6 +25,8 @@ t_mat4f		mat4f(void);
 
 t_mat4f		mat4f_mult(t_mat4f l, t_mat4f r);
 
+t_mat4f		mat4f_rotation_euler(t_vec3f e);
+
 t_mat4f		mat4f_transpose(t_mat4f m);
 
 t_vec3f		mat4f_vec_mult(t_vec3f v, t_mat4f m);
