@@ -37,7 +37,7 @@ $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
 
 $(NAME) : $(OBJECTS)
 	@echo "Archiving $(@)..."
-	@ar -rc $@ $<
+	@ar -rc $@ $(OBJECTS)
 	@echo "Done.\nIndexing $(@)..."
 	@ranlib $@
 	@echo "Done."
