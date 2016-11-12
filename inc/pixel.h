@@ -32,7 +32,7 @@ t_pixel	pixel_init(t_color c, int x, int y);
 void	pixel_line_draw(
 	t_pixel	p0,
 	t_pixel p1,
-	void *plot(t_pixel, t_color *, void *),
+	void plot(t_pixel, t_color *, void *),
 	void *args);
 
 #endif
