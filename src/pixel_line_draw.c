@@ -19,7 +19,7 @@ static int	absi(int i)
 	return (i);
 }
 
-void	pixel_line_draw(
+void		pixel_line_draw(
 	t_pixel p0,
 	t_pixel p1,
 	void plot(t_pixel, t_color *, void *),
