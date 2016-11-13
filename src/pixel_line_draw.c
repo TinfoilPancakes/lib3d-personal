@@ -31,8 +31,8 @@ void		pixel_line_draw(
 	delta = pixel_init(color(), p1.x - p0.x, p1.y - p0.y);
 	if (absi(delta.x) < absi(delta.y))
 	{
-		delta = pixel_init(delta.c, delta.y, delta.x);
-		delta.c.b = 1;
+		delta = pixel_init(color_init(0, 0, 1), delta.y, delta.x);
+		p0 = pixel_init(p0.c, p0.y, p0.x);
 	}
 	s = vec2f_init(-1, (float)delta.y / delta.x);
 	while (delta.x != 0)
