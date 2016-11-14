@@ -13,13 +13,20 @@
 #ifndef COLOR_H
 # define COLOR_H
 
+struct	s_argb_color
+{
+	unsigned char	b;
+	unsigned char	g;
+	unsigned char	r;
+	unsigned char	a;
+};
+
+typedef struct s_argb_color	t_argb;
+
 union	u_color
 {
-	int				val;
-	unsigned char	a;
-	unsigned char	r;
-	unsigned char	g;
-	unsigned char	b;
+	t_argb	c;
+	int		val;
 };
 
 typedef	union u_color	t_color;

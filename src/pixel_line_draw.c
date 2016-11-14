@@ -43,7 +43,7 @@ void		pixel_line_draw(
 			s.x -= 1;
 			p0.y += (delta.y < 0) ? -1 : 1;
 		}
-		if (delta.c.b)
+		if (delta.c.c.b)
 			plot(pixel_init(p0.c, p0.y, p0.x), &p0.c, args);
 		else
 			plot(p0, &p0.c, args);

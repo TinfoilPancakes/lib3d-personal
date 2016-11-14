@@ -16,9 +16,6 @@ t_color	color(void)
 {
 	t_color	c;
 
-	c.a = 0;
-	c.r = 0;
-	c.g = 0;
-	c.b = 0;
+	c.val = 0;
 	return (c);
 }

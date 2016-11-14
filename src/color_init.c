@@ -16,9 +16,9 @@ t_color	color_init(unsigned char r, unsigned char g, unsigned char b)
 {
 	t_color c;
 
-	c.a = 0;
-	c.r = r;
-	c.g = g;
-	c.b = b;
+	c.c.a = 0;
+	c.c.r = r;
+	c.c.g = g;
+	c.c.b = b;
 	return (c);
 }
