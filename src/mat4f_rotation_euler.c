@@ -34,8 +34,8 @@ t_mat4f	mat4f_rotation_euler(t_vec3f e)
 	r = mat4f();
 	n = vec2f_init(cosf(e.z), sinf(e.z));
 	r.m[0][0] = n.x;
-	r.m[0][1] = n.y;
-	r.m[1][0] = -n.y;
-	r.m[1][1] = n.x;
+	r.m[0][2] = n.y;
+	r.m[0][2] = -n.y;
+	r.m[2][2] = n.x;
 	return (mat4f_mult(r, mat4f_mult(p, y)));
 }
